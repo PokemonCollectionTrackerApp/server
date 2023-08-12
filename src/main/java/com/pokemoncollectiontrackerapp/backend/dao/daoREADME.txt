@@ -1,0 +1,2 @@
+Description of what this file shoud contain from ChatGPT
+dao: The Data Access Object (DAO) layer interacts directly with the database. You'll define interfaces like UserDao.java and ProductDao.java, which declare methods for CRUD operations on corresponding entities.

@@ -1,0 +1,2 @@
+Description of what this file shoud contain from ChatGPT
+resources: In this folder, you'll place configuration files, such as application.properties or application.yml, where you can specify database connection properties, Spring Boot configurations, and other settings.

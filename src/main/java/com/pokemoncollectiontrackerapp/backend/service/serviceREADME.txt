@@ -1,0 +1,2 @@
+Description of what this file shoud contain from ChatGPT
+service: The service layer contains business logic and acts as an intermediary between the controller and the DAO layer. For example, UserService.java and ProductService.java will define methods to perform business operations related to users and products, respectively.

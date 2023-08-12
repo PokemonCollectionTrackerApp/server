@@ -1,0 +1,2 @@
+Description of what this file shoud contain from ChatGPT
+config: This folder contains configuration classes, such as the DatabaseConfig.java, where you set up the JdbcTemplate and DataSource for interacting with the PostgreSQL database.

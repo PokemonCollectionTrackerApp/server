@@ -1,0 +1,2 @@
+Description of what this file shoud contain from ChatGPT
+controller: Controllers are responsible for handling HTTP requests and responses. You can have multiple controller classes for different resource endpoints. For example, UserController.java can handle user-related HTTP requests.

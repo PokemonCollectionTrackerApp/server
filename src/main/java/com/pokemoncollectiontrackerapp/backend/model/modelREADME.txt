@@ -1,0 +1,2 @@
+Description of what this file shoud contain from ChatGPT
+model: This folder contains your POJO (Plain Old Java Object) classes that represent the entities in your application. In this example, User.java and Product.java are two such entities.
