@@ -30,7 +30,8 @@ public class PokemonModel {
     this.gender_ratio = null;
     this.catch_rate = -1; 
     this.E_G_G_1 = "field";
-    this.E_G_G_2 = null;}
+    this.E_G_G_2 = null;
+    }
 
     public PokemonModel(int pokemon_id, int national_dex_number, String name, String primary_type, String secondary_type, String category, String primary_ability, String secondary_ability, String hidden_ability, String mega_ability, String gender_ratio, int catch_rate,  String E_G_G_1, String E_G_G_2) {
     this.pokemon_id = pokemon_id;
