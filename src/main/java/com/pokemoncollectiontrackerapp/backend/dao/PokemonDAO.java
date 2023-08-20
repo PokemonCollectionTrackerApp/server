@@ -10,13 +10,13 @@ import com.pokemoncollectiontrackerapp.backend.model.PokemonModel;
 
 @Repository
 public class PokemonDAO {
-	private JdbcTemplate jdbcTemplateImplementation;
+	private final JdbcTemplate jdbcTemplateImplementation;
 
 	@Autowired
 	public PokemonDAO(JdbcTemplate jdbcTemplateImplementation) {
 		this.jdbcTemplateImplementation = jdbcTemplateImplementation;
 	}
-
+	// rename this jank
 	public List<PokemonModel> jank(){
 		String sql = "SELECT * FROM pokemon";
 		return jdbcTemplateImplementation.query(sql, (rs, rowNum) -> {
