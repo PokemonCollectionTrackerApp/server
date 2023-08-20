@@ -12,7 +12,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.pokemoncollectiontrackerapp.backend.model.CollectionPokemonModel;
 import com.pokemoncollectiontrackerapp.backend.model.PokemonModel;
+import com.pokemoncollectiontrackerapp.backend.service.CollectionPokemonService;
 // import com.pokemoncollectiontrackerapp.backend.dao.PokemonDAO;
 import com.pokemoncollectiontrackerapp.backend.service.PokemonService;
 
@@ -29,6 +31,14 @@ public class BackendApplication
 		for (PokemonModel pokemon : pokemonList) {
 			System.out.println(pokemon.getName());
 		}
+
+		CollectionPokemonService collectionPokemonService = context.getBean(CollectionPokemonService.class);
+
+		List<CollectionPokemonModel> collection = collectionPokemonService.selectByCollectionId(7);
+		for (CollectionPokemonModel collectionPokemonModel : collection) {
+			System.out.println(collectionPokemonModel.get_pokemon_class_id());
+		}
+
 		SpringApplication.run(BackendApplication.class, args);
 		System.out.println("yay");
 
