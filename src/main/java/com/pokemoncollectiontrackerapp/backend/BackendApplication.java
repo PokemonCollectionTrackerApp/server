@@ -27,7 +27,7 @@ public class BackendApplication
 
 		List<PokemonModel> pokemonList = pokemonService.selectAllPokemon();
 		for (PokemonModel pokemon : pokemonList) {
-			System.out.println(pokemon);
+			System.out.println(pokemon.getName());
 		}
 		SpringApplication.run(BackendApplication.class, args);
 		System.out.println("yay");
